@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-	"test": "jest --watch"
+    "test": "jest --watch"
   },
   "dependencies": {
     "next": "12.1.5",
@@ -19,6 +19,7 @@
     "@testing-library/react": "^13.1.1",
     "eslint": "8.13.0",
     "eslint-config-next": "12.1.5",
+    "eslint-plugin-react": "^7.29.4",
     "jest": "^27.5.1"
   }
 }

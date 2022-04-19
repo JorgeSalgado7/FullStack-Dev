@@ -1,3 +1,43 @@
 {
-  "extends": ["next/babel", "next/core-web-vitals"]
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "indent": [
+            "error",
+            "tab"
+        ],
+        "linebreak-style": "off",
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "never"
+        ],
+		"react/prop-types": "off",
+		"react/react-in-jsx-scope": "off",
+		"comma-spacing": ["error", { "before": false, "after": true }],
+		"object-curly-spacing": ["error", "always"],
+		"no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 1,"maxBOF": 1 }],
+		"no-console": "error",
+		"eqeqeq": ["error", "always"]
+    }
 }
