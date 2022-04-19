@@ -1,5 +1,5 @@
 /* eslint-disable */
-import { prettyDOM, render, screen } from '@testing-library/react'
+import { render } from '@testing-library/react'
 import Home from '../pages/index'
 import '@testing-library/jest-dom'
 
@@ -19,6 +19,11 @@ describe('Home', () => {
 		const home = render( <Home /> )
 		const el =  home.container.querySelector('.welcome')
 		expect(el).toHaveTextContent('Welcome to Next.js!')
+	})
+
+	test('find <code> tag', () => {
+		const home = render( <Home /> )
+		home.container.querySelector('li')
 	})
 
 })
